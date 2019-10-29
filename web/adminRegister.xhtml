@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <center>
+        <h:form>
+            
+            <p:panelGrid columns="2">
+                <h:outputLabel for="name" value="Name:"/>
+                <p:inputText id="name" required="true" value="#{com.userName}"/>
+                <h:outputLabel for="email" value="Email:"/>
+                <p:inputText id="email" value="#{com.email}" required="true"/>
+                <h:outputLabel for="password" value="PassWord"/>
+                <p:password id="password" value="#{com.password}" required="true"/>
+                <p:commandButton type="submit" value="Register" action="#{com.register}"/>
+            </p:panelGrid>
+        </h:form>
+            </center>
+    </h:body>
+</html>
+

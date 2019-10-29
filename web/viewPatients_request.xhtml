@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <ui:insert>
+            <ui:include src="./menu1.xhtml">
+                
+            </ui:include>
+        </ui:insert>
+        <p:separator/>
+        
+        
+          <p:dataTable var="dt" value="#{com.admreg}">
+    <p:column headerText="Patient's Name">
+        <h:outputText value="#{com.patientName}" />
+    </p:column>
+ 
+    <p:column headerText="Doctor's Name">
+        <h:outputText value="#{com.doctorName}" />
+    </p:column>
+ 
+    <p:column headerText="Location">
+        <h:outputText value="#{com.location}" />
+    </p:column>
+              <p:column headerText="Phone">
+                  <h:outputText value="#{com.phone}"/>
+              </p:column>
+ 
+    <p:column headerText="Email">
+        <h:outputText value="#{com.email}" />
+    </p:column>
+            <p:column headerText="Catagory">
+                <h:outputText value="#{com.catagore}"/>
+                
+            </p:column>
+              <p:column headerText="Resson">
+                  <h:outputText value="#{com.resson}"/>
+              </p:column>
+              <p:column headerText="Send">
+                  <h:outputText value="#{com.send}"/>
+              </p:column>
+</p:dataTable>
+    </h:body>
+</html>
+

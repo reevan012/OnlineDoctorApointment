@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <center>
+        <h:form>
+            <p:panelGrid columns="2">
+                <h:outputLabel for="name" value="Doctor Name:"/>
+                <p:inputText required="true" id="name" value="#{com.doctorName}" />
+                <h:outputLabel for="password" value="PassWord:"/>
+                <p:password id="password" value="#{com.password}" required="true"/>
+                <h:outputLabel for="location" value="Location:"/>
+                <p:inputText id="location" value="#{com.location}" required="true"/>
+                <h:outputLabel for="gender" value="Select Gender:"/>
+                <p:inputText id="gender" value="#{com.selectGender}" required="true"/>
+                <h:outputLabel for="email" value="Email Id:"/>
+                <p:inputText id="email" value="#{com.email}" required="true"/>
+                <h:outputLabel for="catagore" value="Catagory:"/>
+                <p:inputText id="catagore" value="#{com.catagory}" required="true"/>
+                <h:outputLabel for="timings" value="Timings:"/>
+                <p:inputText id="timings" value="#{com.timing}" required="true"/>
+                <h:outputLabel for="fee" value="Fees:"/>
+                <p:inputText id="fee" value="#{com.fees}" required="true"/>
+                <h:outputLabel for="mobileNumber" value="Cellphone Contract:"/>
+                <p:inputText id="mobileNumber" value="#{com.phone}" required="true"/>
+                <h:outputLabel for="info" value="Information:"/>
+                <p:inputText id="info" value="#{com.info}" required="true"/>
+                <h:outputLabel for="experiance" value="Experiance:"/>
+                <p:inputText id="experiance" value="#{com.experiance}" required="true"/>
+                <p:commandButton type="submit" value="Register" action="#{com.register1()}"/>
+                
+            </p:panelGrid>
+            
+        </h:form>
+        </center>    
+    </h:body>
+</html>
+

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <ui:insert>
+            <ui:include src="./menu3.xhtml">
+                
+            </ui:include>
+        </ui:insert>
+        <p:separator/>
+        <center>
+        <h:form>
+            <p:panelGrid columns="2">
+                <p:outputLabel for="name" value="Select Doctor:"/>
+                <p:selectOneMenu id="name" value="#{com.doctorName}">
+                
+                    <f:selectItem itemLabel="Select One" itemValue="#{com.doctorName}"/>
+                    <f:selectItem itemLabel="Xbox One" itemValue="Xbox One" />
+                    <f:selectItem itemLabel="PS4" itemValue="PS4" />
+                    <f:selectItem itemLabel="Wii U" itemValue="Wii U" />
+                </p:selectOneMenu>
+                 <h:outputLabel for="text" value="Feedback:"/>
+        <p:inputTextarea id="text" value="#{com.text}"/>
+        <p:commandButton type="submit" value="Submit" action="#{com.login}"/>
+            </p:panelGrid>
+        </h:form>
+        </center>
+   </h:body>
+</html>
+
+
+         
+             
+       
+       
+            
